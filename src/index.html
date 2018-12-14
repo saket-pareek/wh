@@ -11,10 +11,35 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
-  <div>
-    <h1>Starter kit for Web Projects</h1>
-  </div>
+<body class="sidebar--hidden">
+  
+  <!-- Navigation bar section -->
+  <section class="navibar">
+    <nav class="navbar navbar-light bg-white py-4 fixed-top border">
+      <div class="container-fluid">
+        <div class="w-25">
+          <div class="navibar__toggler text-left">
+            <button class="btn bg-white" data-bind="click: toggleSidebar">
+              <span class="navibar__toggler__icon navbar-toggler-icon"></span>
+              <span class="navibar__toggler__link align-middle pl-2 text-uppercase">Projects</span>
+            </button>
+          </div>
+        </div>
+        <div class="w-50">
+          <div class="text-center">
+            <a class="navibar__logo navbar-brand mr-0 text-uppercase" href="#">Woodify Homes</a>
+          </div>
+        </div>
+        <div class="w-25">
+          <div class="navibar__toggler text-right">
+            <button class="btn bg-white">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
