@@ -1,0 +1,91 @@
+/* General styles for all elements */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* border: 1px solid red; */
+}
+
+/* div {
+  border: 1px solid red;
+} */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* Navigation and sidebar styles */
+
+.navibar__logo {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  letter-spacing: .8rem;
+  animation: showIn 2s ease-in-out;
+}
+
+.navibar__toggler__link, .sidebar__list__item {
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 6.5rem;
+  width: 19.2rem;
+  height: 91.1vh;
+  overflow-y: auto;
+  transition: all .7s;
+}
+
+.sidebar--hidden .sidebar {
+  transform: translateX(-19.2rem);
+}
+
+@keyframes showIn {
+  0% {
+    opacity: .1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Home styles */
+
+.home {
+  overflow-x: hidden;
+}
+
+.home__content {
+  margin-top: 6.5rem;
+  background: url('../img/main.jpg');
+  background-size: 50% 50%;
+  height: 91.1vh;
+  transition: all .7s;
+}
+
+.home__content__foreground {
+  height: inherit;
+  transition: all .7s;
+}
+
+.home__content--shift {
+  transform: translateX(12.8rem);
+}
+
+.home__content__foreground--dark {
+  background-color: rgba(0,0,0,.8);
+}
